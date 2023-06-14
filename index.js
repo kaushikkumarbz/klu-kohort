@@ -1,5 +1,6 @@
 const express = require('express')
 const Blog = require("./db/blogPost")
+const Student = require("./db/student")
 const app = express()
 
 const data = require("./connect")
@@ -13,15 +14,12 @@ app.get('/', function (req, res) {
 
 app.get('/home',async function (req, res) {
 
-  let newblog = new Blog({
-    author: "new",
-    title: "sdf",
-    body: "sdfs",
-    date: new Date()
+   let newStudent = new Student({
+     name : " John ",
+     collegeId: "123"
+   })
 
-  })
-
-   let data = await newblog.save();
+   let data = await newStudent.save();
 
 
     res.send({answer : data})

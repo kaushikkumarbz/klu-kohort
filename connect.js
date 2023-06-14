@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const connectionString =
+const connectionString = "";
 
 
 module.exports.connectMongoDB = function () {
