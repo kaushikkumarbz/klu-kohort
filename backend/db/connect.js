@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const connectionString = "";
+const connectionString = "mongodb+srv://root:root@nodecluster.oaib3if.mongodb.net/kohort";
 
 
 module.exports.connectMongoDB = function () {
@@ -17,3 +17,10 @@ module.exports.connectMongoDB = function () {
 
 
 // developmentDBOne
+
+
+// How to create schema
+// CRUD operations on the table
+// mongoose
+
+
